@@ -1,0 +1,37 @@
+{
+  "name": "rvl-pipe-rabbitmq",
+  "version": "0.1.0",
+  "description": "rvl-pipe style wrappers for rabbitmq",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava --verbose",
+    "lint": "standard",
+    "report": "nyc report --reporter=html"
+  },
+  "keywords": [
+    "pipe",
+    "promises",
+    "async",
+    "rabbitmq"
+  ],
+  "repository": "https://github.com/revelatio/rvl-pipe-rabbitmq",
+  "author": "Ernesto Freyre",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.5.2"
+  },
+  "peerDependencies": {
+    "rvl-pipe": "latest"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "coveralls": "^3.0.0",
+    "cuid": "^2.0.2",
+    "dotenv": "^6.0.0",
+    "faker": "^4.1.0",
+    "nyc": "^11.4.1",
+    "rvl-pipe": "latest",
+    "sinon": "^4.2.2",
+    "standard": "^10.0.3"
+  }
+}
