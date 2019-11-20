@@ -9,13 +9,12 @@ const consumeMemeSendTask = each(
         ctx.msg.body
       )}'`
   ),
-  always(TaskResult.FAILED_NO_RETRY)
   // Send State Task
-  // sendTask(
-  //   always('meme.state'),
-  //   props({ taskId: prop('msg.meta.uuid'), result: 'done' })
-  // ),
-  // always(TaskResult.SUCCESS)
+  sendTask(
+    always('meme.state'),
+    props({ taskId: prop('msg.meta.uuid'), result: 'done' })
+  ),
+  always(TaskResult.SUCCESS)
 )
 
 const consumeMemeStateTask = each(
