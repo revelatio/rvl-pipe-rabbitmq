@@ -1,27 +1,7 @@
-const {
-  connectAMQP,
-  closeAMQP,
-
-  consumeTaskQueue,
-  sendTaskMessage,
-
-  messageAck,
-  messageNoAck,
-
-  sendTopicMessage,
-  consumeTopicsMessages
-} = require('./lib/common')
+const common = require('./lib/common')
+const retriable = require('./lib/retriable')
 
 module.exports = {
-  connectAMQP,
-  closeAMQP,
-
-  consumeTaskQueue,
-  sendTaskMessage,
-
-  messageAck,
-  messageNoAck,
-
-  sendTopicMessage,
-  consumeTopicsMessages
+  ...common,
+  ...retriable
 }

@@ -1,6 +1,6 @@
 {
   "name": "rvl-pipe-rabbitmq",
-  "version": "0.1.1",
+  "version": "0.3.0",
   "description": "rvl-pipe style wrappers for rabbitmq",
   "main": "index.js",
   "scripts": {
@@ -18,20 +18,21 @@
   "author": "Ernesto Freyre",
   "license": "MIT",
   "dependencies": {
-    "amqplib": "^0.5.2"
+    "amqplib": "^0.5.5"
   },
   "peerDependencies": {
     "rvl-pipe": "latest"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
-    "coveralls": "^3.0.0",
-    "cuid": "^2.0.2",
-    "dotenv": "^6.0.0",
+    "ava": "^2.4.0",
+    "coveralls": "^3.0.7",
+    "cuid": "^2.1.6",
+    "dotenv": "^8.2.0",
     "faker": "^4.1.0",
-    "nyc": "^11.4.1",
-    "rvl-pipe": "latest",
-    "sinon": "^4.2.2",
-    "standard": "^10.0.3"
+    "nyc": "^14.1.1",
+    "rvl-pipe": "^1.7.0",
+    "sinon": "^7.5.0",
+    "standard": "^14.3.1",
+    "prettier-standard": "^15.0.1"
   }
 }
