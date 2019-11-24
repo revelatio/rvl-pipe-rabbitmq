@@ -1,5 +1,10 @@
-const { connectAMQP } = require('./lib/common')
-const { logging, TaskResult, sendTask, consume } = require('./lib/retriable')
+const {
+  connectAMQP,
+  logging,
+  TaskResult,
+  sendTask,
+  consume
+} = require('../index')
 const { all, each, always, prop, props } = require('rvl-pipe')
 
 const consumeMemeSendTask = each(

@@ -1,6 +1,6 @@
 {
   "name": "rvl-pipe-rabbitmq",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "rvl-pipe style wrappers for rabbitmq",
   "main": "index.js",
   "scripts": {

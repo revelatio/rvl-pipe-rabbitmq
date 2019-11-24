@@ -1,6 +1,5 @@
-const { connectAMQP, closeAMQP } = require('./index')
 const { each, always } = require('rvl-pipe')
-const { sendTask, logging } = require('./lib/retriable')
+const { connectAMQP, closeAMQP, sendTask, logging } = require('../index')
 
 const sendMeme = each(
   connectAMQP(process.env.RABBITMQ_URL),
